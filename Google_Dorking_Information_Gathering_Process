@@ -1,1 +1,36 @@
+# Google Dorking: The Ultimate Guide
 
+Google Dorking (also called Google hacking) is a technique that uses advanced search operators to find specific information or vulnerable systems that are accidentally exposed on the internet. It's essentially a way to perform precise searches that reveal data not easily accessible through normal searches.
+
+## Why Google Dorking is Used
+
+1. **Ethical hacking/penetration testing**: Security professionals use it to identify vulnerabilities in systems
+2. **OSINT (Open Source Intelligence)**: Researchers and investigators gather publicly available information
+3. **Finding specific file types**: Locating PDFs, spreadsheets, or documents containing certain information
+4. **Discovering unprotected devices**: Finding webcams, printers, or other IoT devices with default settings
+5. **Vulnerability research**: Identifying misconfigured websites and servers
+
+## Common Google Dork Commands
+
+### Basic Operators:
+- `site:` - Search within a specific website (e.g., `site:example.com`)
+- `intitle:` - Search for pages with specific words in the title (e.g., `intitle:"login"`)
+- `inurl:` - Search for specific words in the URL (e.g., `inurl:admin`)
+- `filetype:` - Search for specific file types (e.g., `filetype:pdf`)
+- `ext:` - Similar to filetype but looks at file extensions (e.g., `ext:php`)
+
+### Advanced Operators:
+- `intext:` - Search for text within the page content (e.g., `intext:"password"`)
+- `cache:` - Show the cached version of a page (e.g., `cache:example.com`)
+- `related:` - Find similar sites (e.g., `related:google.com`)
+- `define:` - Get definitions (e.g., `define:hacking`)
+
+### Combination Dorks (for security testing):
+- `intitle:"index of" "parent directory"` - Find open directories
+- `filetype:log intext:password` - Find log files containing passwords
+- `inurl:/admin/login.php` - Find admin login pages
+- `intitle:"webcamXP 5"` - Find unsecured webcams
+- `filetype:sql intext:creditcard` - Find SQL databases with credit card info
+
+## Important Legal Note:
+While Google dorking itself isn't illegal, using it to access unauthorized systems or data is against the law in most countries. Ethical hackers should only use these techniques on systems they have permission to test.
